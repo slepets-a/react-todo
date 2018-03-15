@@ -1,5 +1,5 @@
 {
-  "name": "react-template",
+  "name": "react-todo",
   "version": "0.1.0",
   "author": "Artem Slepets - https://www.linkedin.com/in/artemslepets/",
   "private": true,
@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/slepets-a/react-template"
+    "url": "https://github.com/slepets-a/react-todo"
   },
   "bugs": {
-    "url": "https://github.com/slepets-a/react-template/issues"
+    "url": "https://github.com/slepets-a/react-todo/issues"
   },
   "jest": {
     "collectCoverageFrom": [
