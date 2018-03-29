@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Header from '../Header';
 import ToDoList from '../ToDoList';
 import AddToDoButton from '../AddToDoButton';
@@ -14,12 +16,20 @@ const ToDoContainer = styled.div`
   max-width: 500px;
 `;
 
-const ToDo = () => (
+export const ToDo = ({ toDoList }) => (
   <ToDoContainer>
     <Header />
-    <ToDoList />
+    <ToDoList toDoList={toDoList} />
     <AddToDoButton />
   </ToDoContainer>
 );
 
-export default ToDo;
+const mapStateToProps = state => ({
+  ...state,
+});
+
+ToDo.propTypes = {
+  toDoList: PropTypes.array.isRequired,
+};
+
+export default connect(mapStateToProps)(ToDo);

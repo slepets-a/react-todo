@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
 html {
   display: flex;
 }
@@ -10,6 +12,10 @@ body {
   margin: 0;
   min-height: calc(100vh - 2rem);
   padding: 1rem;
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }
 
 #root {

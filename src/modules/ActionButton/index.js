@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faCheck from '@fortawesome/fontawesome-free-solid/faCheck';
+import faEdit from '@fortawesome/fontawesome-free-solid/faEdit';
+import faTrash from '@fortawesome/fontawesome-free-solid/faTrash';
 
 const ActionButtonContainer = styled.button`
   background-color: transparent;
@@ -22,16 +26,16 @@ const ActionButton = (props) => {
   let icon;
   switch (props.icon) {
     case 'check':
-      icon = <i className="fa fa-check" />;
+      icon = <FontAwesomeIcon icon={faCheck} />;
       break;
     case 'edit':
-      icon = <i className="fa fa-edit" />;
+      icon = <FontAwesomeIcon icon={faEdit} />;
       break;
     case 'remove':
-      icon = <i className="fa fa-trash-alt" />;
+      icon = <FontAwesomeIcon icon={faTrash} />;
       break;
     default:
-      icon = <i className="fa fa-check" />;
+      icon = <FontAwesomeIcon icon={faCheck} />;
   }
   return (
     <ActionButtonContainer onClick={onClick}>
