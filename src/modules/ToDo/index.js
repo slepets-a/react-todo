@@ -11,7 +11,7 @@ const ToDoContainer = styled.div`
   border-radius: .25rem;
   box-shadow: 0 0 .25rem rgba(0,0,0,.1);
   flex: 1 1 auto;
-  padding: .5rem;
+  padding: 1rem;
   margin: 0 auto;
   max-width: 500px;
 `;
